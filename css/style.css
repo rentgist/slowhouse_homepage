@@ -41,6 +41,7 @@ nav {
 }
 
 .menu li {
+  position: relative;
   margin-left: 20px;
 }
 
@@ -52,6 +53,30 @@ nav {
   text-decoration: none;
   color: #333;
   font-weight: bold;
+  padding: 10px 15px;
+  display: block;
+}
+
+/* 하위 메뉴 스타일 */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+}
+
+.has-submenu:hover .submenu {
+  display: block;
+}
+
+.submenu li a {
+  padding: 10px 15px;
+  white-space: nowrap;
 }
 
 /* 섹션 공통 스타일 */
